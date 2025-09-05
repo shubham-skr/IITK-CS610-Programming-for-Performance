@@ -1,4 +1,4 @@
-# Hardware and Software Locking Strategies for Synchronization
+# Software and Hardware Locking Strategies for Synchronization in x86_64 Architecture
 
 ## Machine Specifications
 The program was tested on the IITK CSEWS machine in the KD Lab. The relevant hardware specifications are as follows:
@@ -42,7 +42,7 @@ Hardware atomics and memory barriers are used rather than C++ library mutexes fo
 
 ### Results and Observations
 
-**Execution time (in microseconds) for different locks under varying thread counts**
+**Execution time (in microseconds) for different locks under varying thread counts (N=1e3)**
 
 | **Lock Type**        | **1** | **2** | **4** | **8** | **16** | **32**   | **64**     |
 |-----------------------|-------|-------|-------|-------|--------|----------|------------|
@@ -54,9 +54,10 @@ Hardware atomics and memory barriers are used rather than C++ library mutexes fo
 | Ticket Lock           | 896   | 986   | 2004  | 4228  | 7023   | 10717    | 18269      |
 | Array Queue Lock      | 460   | 692   | 2212  | 3958  | 6916   | 9967     | 22308      |
 
-![Execution time vs Thread count for different locks](locklogs.png)
+<br>
 
----
+<img src="locklogs.png" alt="Execution time vs Thread count for different locks" width="800"/>
+
 
 ### Extended Observations for Larger Workloads
 
