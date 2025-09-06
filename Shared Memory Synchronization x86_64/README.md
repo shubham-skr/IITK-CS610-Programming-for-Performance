@@ -1,4 +1,4 @@
-# Software and Hardware Locking Strategies for Synchronization in x86_64 Architecture
+# Software and Hardware Locking Strategies for Shared Memory Synchronization in x86_64 Architecture
 
 ## Machine Specifications
 The program was tested on the IITK CSEWS machine in the KD Lab. The relevant hardware specifications are as follows:
