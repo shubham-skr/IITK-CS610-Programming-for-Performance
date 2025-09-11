@@ -1,3 +1,2 @@
-### CS610 Programming for Performance
-#### IIT Kanpur
-#### Autumn 2025
+### IIT Kanpur - CS610: Programming for Performance 
+##### Autumn 2025
